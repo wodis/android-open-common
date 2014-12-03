@@ -55,6 +55,9 @@ public final class OpenTextUtils {
         }
     }
 
+    /**
+     * 正则表达式
+     */
     private static class REGEX {
         public static final String WEB = new StringBuilder()
                 .append("((?:(http|https|Http|Https|rtsp|Rtsp):")
