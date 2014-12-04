@@ -101,4 +101,11 @@ public final class OpenTextUtils {
                 .append("\\-\\.\\+\\!\\*\\'\\(\\)\\,\\_])|(?:\\%[a-fA-F0-9]{2}))*)?")
                 .append("(?:\\b|$)").toString();
     }
+
+    public static final String EMAIL = "(\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*)";
+    public static final String TEL_NUM = "1[345678][0-9-\\ ]{9,11}|[0-9]{3,4}[-\\ ][0-9-\\ ]{7,8}|\\d{7,8}";
+    public static final String QQ_NUM = "(QQ|qq|Qq|qQ|扣扣).{0,3}[1-9][0-9\\s]{3,}[0-9]";
+    public static final String URL_NUM = "([a-zA-z]+://[^\\s]*)|([\\/]*[\\w-]+\\.[\\w-]+\\.[\\w-]*)";
+    public static final String HTTP_URL = "(https?)://[-a-zA-Z0-9+&@#/%?=~_|!:,.;]*[-a-zA-Z0-9+&@#/%=~_|]";
+    public static final String XSS = "[><].*(xml|img|script|alert|src|onload|body|iframe|input|link|meta|style|div|table|embed|base|href|object).*[><]";
 }
